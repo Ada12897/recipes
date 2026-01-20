@@ -1,0 +1,104 @@
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  font-weight: 500;
+  font-size: 13px;
+  transition: .18s;
+}
+
+.btn:hover{
+  border-color: rgba(255,43,43,.45);
+  transform: translateY(-1px);
+}
+
+.btn.primary{
+  border-color: rgba(255,43,43,.70);
+  background: rgba(255,43,43,.10);
+}
+
+.card{
+  display:block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 16px;
+  transition: .18s;
+}
+
+.card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,43,43,.30);
+  box-shadow: var(--shadow);
+}
+
+.card h3{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card p{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.panel{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 16px;
+}
+
+.breadcrumb{
+  display:flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.breadcrumb .sep{ opacity: .6; }
+
+.list{
+  display:grid;
+  gap: 8px;
+}
+
+.list li{
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.02);
+  color: rgba(243,243,247,.90);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.steps{
+  display:grid;
+  gap: 10px;
+  padding-left: 18px;
+}
+
+.steps li{
+  color: rgba(243,243,247,.90);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.steps li::marker{
+  color: rgba(255,43,43,.80);
+  font-weight: 600;
+}
+
+.recipe-actions{
+  margin-top: 14px;
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

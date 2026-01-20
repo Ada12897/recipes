@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+:root{
+  --bg:#0b0b0d;
+  --surface:#111115;
+  --card:#15151b;
+  --border:rgba(255,255,255,.10);
+
+  --text:#f3f3f7;
+  --muted:rgba(243,243,247,.72);
+
+  --red:#ff2b2b;
+
+  --max:1100px;
+  --r:14px;
+  --shadow: 0 10px 26px rgba(0,0,0,.30);
+
+  --header-h: 78px;
+}
+
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding-top: var(--header-h);
+}
+
+.container{
+  width: min(var(--max), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.lead{
+  color: var(--muted);
+  max-width: 860px;
+}
+
+.small{
+  color: var(--muted);
+  font-size: 12px;
+}
+
+::selection{ background: rgba(255,43,43,.28); }
+
+@media (max-width: 720px){
+  .container{ width: calc(100% - 28px); }
+}
